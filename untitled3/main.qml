@@ -24,6 +24,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     console.log("Clicked on the red Rectangle")
+                    textToShow = "red"
                 }
             }
         }
@@ -38,6 +39,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     console.log("Clicked on the green Rectangle")
+                    textToShow = "green"
                 }
             }
         }
@@ -52,6 +54,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     console.log("Clicked on the blue Rectangle")
+                    textToShow = "blue"
                 }
             }
         }
