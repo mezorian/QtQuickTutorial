@@ -41,6 +41,7 @@ Window {
                 }
             }
         }
+
         Rectangle {
             id: blueRectId
             width : 150
@@ -51,6 +52,25 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     console.log("Clicked on the blue Rectangle")
+                }
+            }
+        }
+
+        Rectangle {
+            id: textRectId
+            width : 150
+            height: 150
+            color: "blue"
+            radius: 100
+            Text {
+                anchors.centerIn: parent
+                text: textToShow
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    console.log("Clicked on the text Rectangle")
                 }
             }
         }
