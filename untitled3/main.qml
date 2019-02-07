@@ -66,6 +66,7 @@ Window {
             color: "blue"
             radius: 100
             Text {
+                id:textId2
                 anchors.centerIn: parent
                 text: textToShow
             }
@@ -74,6 +75,7 @@ Window {
                 anchors.fill: parent
                 onClicked: {
                     console.log("Clicked on the text Rectangle")
+                    textId2.text = "loop"
                 }
             }
         }
