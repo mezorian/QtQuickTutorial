@@ -11,5 +11,6 @@ Window {
         anchors.centerIn: parent
         text: "Hello World"
         color: "red"
+        font.pointSize: 20
     }
 }
